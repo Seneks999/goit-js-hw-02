@@ -8,7 +8,6 @@ function formatMessage(message, maxLength) {
   }
 }
 
-// Перевірка роботи функції
 console.log(formatMessage('Curabitur ligula sapien', 16)); // "Curabitur ligula..."
 console.log(formatMessage('Curabitur ligula sapien', 23)); // "Curabitur ligula sapien"
 console.log(formatMessage('Vestibulum facilisis purus nec', 20)); // "Vestibulum facilisis..."

@@ -1,14 +1,11 @@
 'use strict';
 
 function checkForSpam(message) {
-  // Приводимо рядок до нижнього регістру для уніфікованої перевірки
   const lowerCaseMessage = message.toLowerCase();
 
-  // Перевіряємо наявність заборонених слів "spam" або "sale"
   return lowerCaseMessage.includes('spam') || lowerCaseMessage.includes('sale');
 }
 
-// Перевірка роботи функції
 console.log(checkForSpam('Latest technology news')); // false
 console.log(checkForSpam('JavaScript weekly newsletter')); // false
 console.log(checkForSpam('Get best sale offers now!')); // true
